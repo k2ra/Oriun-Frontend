@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-gray-800 antialiased;
+}
+
+@media (max-width: 768px) {
+  aside {
+    @apply w-full fixed bottom-0 flex-row z-10;
+  }
+
+  aside nav {
+    @apply flex justify-around;
+  }
+
+  main {
+    @apply pt-4 pb-20;
+  }
+}
